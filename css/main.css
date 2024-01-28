@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    margin: 5% 0;
+    background-color: #eceeee;
+}
+
+.card {
+    margin-left: 25px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.card:last-child {
+    margin-right: 25px;
+}
+.card__header {
+    min-height: 30px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.purple {
+    background-color: #8e6e95;
+}
+.green {
+    background-color: #39a59c;
+}
+.blue {
+    background-color: #344759;
+}
+.orange {
+    background-color: #e8741e;
+}
+.card__item {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    padding: 14px 20px;
+    margin-bottom: 12px;
+    background-color: white;
+    color: #333;
+    max-height: 45px;
+}
+.card__item span {
+    flex: 1;
+    display: flex;
+}
+.card:first-child .card__left {
+    display: none;
+}
+.card:last-child .card__right {
+    display: none;
+}
+.card__arrow {
+    width: 25px;
+    height: 100%;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    line-height: 38px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.card__add {
+    color: #333;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 45px;
+    cursor: pointer;
+}
+.card__add::before {
+    content: '+';
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    display: block;
+}
